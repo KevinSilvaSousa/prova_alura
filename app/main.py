@@ -10,3 +10,6 @@ app = FastAPI(
 def home():
     return {"messagem": "Catalago de Séries em construção"}
 
+@app.post("series/")
+def series():
+    
