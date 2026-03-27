@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 
+from app.models.series import SeriesRegister
+
+
 app = FastAPI(
     title = "Catalago de Séries",
     description = "Catalago",
@@ -10,6 +13,6 @@ app = FastAPI(
 def home():
     return {"messagem": "Catalago de Séries em construção"}
 
-@app.post("series/")
+@app.post("/series/")
 def series():
-    
+    return SeriesRegister
