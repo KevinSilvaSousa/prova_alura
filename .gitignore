@@ -181,3 +181,5 @@ cython_debug/
 .cursorindexingignore
 
 inicializador.txt
+notas
+enunciado.txt
